@@ -77,7 +77,7 @@ export default function Project({ project, moreProjects }: Props) {
             <ContentGrid
               title="Other Projects"
               items={moreProjects}
-              collection="projects"
+              collection="resources"
             />
           )}
         </div>
