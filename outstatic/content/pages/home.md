@@ -10,9 +10,7 @@ coverImage: ''
 publishedAt: '2022-03-17T05:35:07.322Z'
 ---
 
-## Open Science Community 
-
-# Nigeria
+# Open Science Community Nigeria
 
 Welcome to our website. Find relevant posts, resources, and our members below.
 
