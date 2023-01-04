@@ -31,7 +31,7 @@ const ContentGrid = ({ title = 'More', items, collection }: Props) => {
                   width={347}
                   height={192}
                 />
-                {(collection === 'members' | collection === 'resources') ? (
+                {(collection === 'members' || collection === 'resources') ? (
                   <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-3xl absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 shadow-lg rounded-lg">
                     {item.title}
                   </h2>
