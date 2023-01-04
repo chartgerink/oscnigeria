@@ -8,10 +8,11 @@ import markdownToHtml from '../lib/markdownToHtml'
 type Props = {
   page: Document
   allPosts: Document[]
-  allProjects: Document[]
+  allResources: Document[]
+  allMembers: Document[]
 }
 
-export default function Index({ page, allPosts, allProjects }: Props) {
+export default function Index({ page, allPosts, allResources, allMembers }: Props) {
   return (
     <>
       <Layout>
@@ -28,11 +29,18 @@ export default function Index({ page, allPosts, allProjects }: Props) {
           {allPosts.length > 0 && (
             <ContentGrid title="Posts" items={allPosts} collection="posts" />
           )}
-          {allProjects.length > 0 && (
+          {allResources.length > 0 && (
             <ContentGrid
-              title="Projects"
-              items={allProjects}
-              collection="projects"
+              title="Resources"
+              items={allResources}
+              collection="resources"
+            />
+          )}
+          {allMembers.length > 0 && (
+            <ContentGrid
+              title="Members"
+              items={allMembers}
+              collection="members"
             />
           )}
         </div>
@@ -52,11 +60,13 @@ export const getStaticProps = async () => {
     'description'
   ])
 
-  const allProjects = getDocuments('projects', ['title', 'slug', 'coverImage'])
+  const allResources = getDocuments('resources', ['title', 'slug', 'coverImage'])
+
+  const allMembers = getDocuments('members', ['title', 'slug', 'coverImage'])
 
   const content = await markdownToHtml(page.content || '')
 
   return {
-    props: { page: { content }, allPosts, allProjects }
+    props: { page: { content }, allPosts, allResources, allMembers }
   }
 }
