@@ -10,7 +10,13 @@ coverImage: ''
 publishedAt: '2022-03-17T05:35:07.322Z'
 ---
 
-# I'm Andre, nice to meet you.
+## Open Science Community 
 
-I am a surfer + musician + software developer + designer + online marketer and whatever else I can cram into this existence.
+# Nigeria
+
+Welcome to our website. Find relevant posts, resources, and our members below.
+
+Have questions for us? Please email info@xxxx.com
+
+
 
