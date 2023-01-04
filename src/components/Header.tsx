@@ -15,8 +15,13 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="/#projects" className="hover:underline">
-            Projects
+          <Link href="/#resources" className="hover:underline">
+            Resources
+          </Link>
+        </li>
+        <li>
+          <Link href="/#members" className="hover:underline">
+            Members
           </Link>
         </li>
       </ul>

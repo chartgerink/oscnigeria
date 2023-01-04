@@ -15,13 +15,13 @@ import Image from 'next/image'
 import ContentGrid from '../../components/ContentGrid'
 
 type Props = {
-  resource: Document
-  moreResources: Document[]
+  member: Document
+  moreMembers: Document[]
 }
 
-export default function resource({ resource, moreResources }: Props) {
+export default function member({ member, moreMembers }: Props) {
   const router = useRouter()
-  if (!router.isFallback && !resource?.slug) {
+  if (!router.isFallback && !member?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
@@ -36,15 +36,15 @@ export default function resource({ resource, moreResources }: Props) {
           <>
             <article className="mb-8">
               <Head>
-                <title>{`${resource.title} | Next.js + Outstatic`}</title>
-                <meta property="og:image" content={resource.coverImage} />
+                <title>{`${member.title} | Next.js + Outstatic`}</title>
+                <meta property="og:image" content={member.coverImage} />
               </Head>
               <div className="grid md:grid-cols-2 gap-8">
-              {resource.coverImage ? 
+              {member.coverImage ? 
                 <div className="relative mb-2 md:mb-4 sm:mx-0 h-64">
                   <Image
-                    alt={resource.title}
-                    src={resource.coverImage}
+                    alt={member.title}
+                    src={member.coverImage}
                     fill
                     className="object-cover object-center"
                     priority
@@ -52,20 +52,20 @@ export default function resource({ resource, moreResources }: Props) {
                 </div> : ""}
                 <div>
                   <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
-                    {resource.title}
+                    {member.title}
                   </h1>
                   <div className="hidden md:block md:mb-8 text-slate-600">
                     Launched on{' '}
-                    <DateFormatter dateString={resource.publishedAt} /> by{' '}
-                    {resource.author.name}.
+                    <DateFormatter dateString={member.publishedAt} /> by{' '}
+                    {member.author.name}.
                   </div>
                   <div className="inline-block p-4 border mb-8 font-semibold text-lg rounded shadow">
-                    {resource.description}
+                    {member.description}
                   </div>
                   <div className="max-w-2xl mx-auto">
                     <div
                       className="prose lg:prose-xl"
-                      dangerouslySetInnerHTML={{ __html: resource.content }}
+                      dangerouslySetInnerHTML={{ __html: member.content }}
                     />
                   </div>
                 </div>
@@ -74,11 +74,11 @@ export default function resource({ resource, moreResources }: Props) {
           </>
         )}
         <div className="mb-16">
-          {moreResources.length > 0 && (
+          {moreMembers.length > 0 && (
             <ContentGrid
-              title="Other resources"
-              items={moreResources}
-              collection="resources"
+              title="Other members"
+              items={moreMembers}
+              collection="members"
             />
           )}
         </div>
@@ -94,7 +94,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const resource = getDocumentBySlug('resources', params.slug, [
+  const member = getDocumentBySlug('members', params.slug, [
     'title',
     'publishedAt',
     'description',
@@ -104,24 +104,24 @@ export async function getStaticProps({ params }: Params) {
     'coverImage'
   ])
 
-  const content = await markdownToHtml(resource.content || '')
+  const content = await markdownToHtml(member.content || '')
 
-  const moreResources = getDocuments('resources', ['title', 'slug', 'coverImage'])
+  const moreMembers = getDocuments('members', ['title', 'slug', 'coverImage'])
 
   return {
     props: {
-      resource: {
-        ...resource,
+      member: {
+        ...member,
         content
       },
-      moreResources
+      moreMembers
     }
   }
 }
 
 export async function getStaticPaths() {
   return {
-    paths: getDocumentPaths('resources'),
+    paths: getDocumentPaths('members'),
     fallback: false
   }
 }
