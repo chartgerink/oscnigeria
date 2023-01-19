@@ -1,6 +1,6 @@
 ---
 title: 'About '
-status: 'draft'
+status: 'published'
 author:
   name: 'Umar Ahmad'
   picture: 'https://avatars.githubusercontent.com/u/45367984?v=4'
