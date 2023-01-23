@@ -11,9 +11,11 @@
 The official website of the Open Science Community Nigeria (OSCN) can be accessed via this [link](https://www.oscnigeria.org). The site is still underdevelopment. 
 
 ### TO DO
-- Develope the content
+- Development of the web content
 
 ### License
+
+Outstatic [Visit] (https://outstatic.com/docs/getting-started).
 
 
 ## Contributors ✨
