@@ -8,7 +8,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
-This is the official website for Open Science Community Nigeria, which can be found [here](https://www.oscnigeria.org). It's still under construction.
+The official website of the Open Science Community Nigeria (OSCN) can be accessed via this [link](https://www.oscnigeria.org). The site is still underdevelopment. 
 
 ### TO DO
 - Develope the content
