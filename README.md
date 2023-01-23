@@ -11,11 +11,11 @@
 
 This is the official website for Open Science Community Nigeria, which can be found [here](https://www.oscnigeria.org). It's still under construction.
 
-### TODO
-- Add accessibility elements to the website
+### TO DO
+- Develope the content
 
 ### License
-https://bootstrapmade.com/license/
+
 
 ## Contributors ✨
 
