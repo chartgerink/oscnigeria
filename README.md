@@ -5,9 +5,7 @@
 
 [![Crowdin](https://badges.crowdin.net/oscsa-website-translation/localized.svg)](https://crowdin.com/project/oscsa-website-translation)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f9f4f640-c6b5-44be-844b-78e7fa03282e/deploy-status)](https://app.netlify.com/sites/oscksa/deploys)
+
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
