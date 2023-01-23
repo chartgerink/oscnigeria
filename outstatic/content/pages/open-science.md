@@ -3,7 +3,7 @@ author:
   name: 'Umar Ahmad'
   picture: 'https://avatars.githubusercontent.com/u/45367984?v=4'
 coverImage: ''
-title: 'Open Science '
+title: 'Open Science Community Nigeria '
 status: 'published'
 slug: 'open-science'
 description: ''
