@@ -10,6 +10,11 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link href="/about" className="hover:underline">
+            About
+          </Link>
+        </li>
+        <li>
           <Link href="/#posts" className="hover:underline">
             Posts
           </Link>
@@ -20,8 +25,18 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link href="/open-science" className="hover:underline">
+            Open Science
+          </Link>
+        </li>
+        <li>
           <Link href="/#members" className="hover:underline">
             Members
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="hover:underline">
+            Contact
           </Link>
         </li>
       </ul>

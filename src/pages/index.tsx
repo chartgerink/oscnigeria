@@ -4,6 +4,7 @@ import { Document } from '../interfaces/document'
 import { getDocumentBySlug, getDocuments } from 'outstatic/server'
 import ContentGrid from '../components/ContentGrid'
 import markdownToHtml from '../lib/markdownToHtml'
+import Header from '../components/Header'
 
 type Props = {
   page: Document
@@ -20,6 +21,7 @@ export default function Index({ page, allPosts, allResources, allMembers }: Prop
           <title>Outstatic Example Blog</title>
         </Head>
         <div className="max-w-6xl mx-auto px-5">
+        <Header />
           <section className="mt-16 mb-16 md:mb-12">
             <div
               className="prose lg:prose-2xl home-intro"

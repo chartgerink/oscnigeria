@@ -55,9 +55,7 @@ export default function member({ member, moreMembers }: Props) {
                     {member.title}
                   </h1>
                   <div className="hidden md:block md:mb-8 text-slate-600">
-                    Launched on{' '}
-                    <DateFormatter dateString={member.publishedAt} /> by{' '}
-                    {member.author.name}.
+                    <DateFormatter dateString={member.publishedAt} />.
                   </div>
                   <div className="inline-block p-4 border mb-8 font-semibold text-lg rounded shadow">
                     {member.description}
