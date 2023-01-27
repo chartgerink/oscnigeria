@@ -18,7 +18,7 @@ export default function Index({ page, allPosts, allResources, allMembers }: Prop
     <>
       <Layout>
         <Head>
-          <title>Outstatic Example Blog</title>
+          <title>OSC Nigeria</title>
         </Head>
         <div className="max-w-6xl mx-auto px-5">
         <Header />
